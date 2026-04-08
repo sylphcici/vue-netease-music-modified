@@ -1,11 +1,7 @@
 <template>
   <div @click="onClick" class="horizontal-card">
-    <slot name="img-wrap">
-      <div class="img-wrap">
-        <img :src="img" />
-        <slot name="img-mask"></slot>
-      </div>
-    </slot>
+    <slot name="test"></slot>
+    <div>测试文字</div>
   </div>
 </template>
 
