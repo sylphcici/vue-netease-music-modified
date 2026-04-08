@@ -1,17 +1,11 @@
 <template>
   <div @click="onClick" class="horizontal-card">
-    <div @click="onClick" class="horizontal-card">
     <slot name="img-wrap">
       <div class="img-wrap">
         <img :src="img" />
         <slot name="img-mask"></slot>
       </div>
     </slot>
-    <div class="content">
-      <div class="name">{{ name }}</div>
-      <div class="desc">{{ desc }}</div>
-    </div>
-  </div>
   </div>
 </template>
 
