@@ -12,6 +12,3 @@ export const getHotComment = params =>
 // mv评论
 export const getMvComment = params =>
   requestWithoutLoading.get('/comment/mv', { params })
-// 给评论点赞
-export const setCommentLike = params =>
-  requestWithoutLoading.get("/comment/like", { params })
