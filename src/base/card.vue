@@ -43,6 +43,18 @@ export default {
     img {
       border-radius: 4px;
     }
+
+    .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      color: white;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
   }
 
   .content {
