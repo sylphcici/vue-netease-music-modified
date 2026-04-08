@@ -1,13 +1,6 @@
 <template>
   <div @click="onClick" class="horizontal-card">
-    <div class="content">
-      <div class="name">{{ name }}</div>
-      <div class="desc">
-        <span class="desc-content">
-        <slot name="desc">test</slot>
-        </span>
-      </div>
-    </div>
+    <div>TEST: {{ name }} - {{ desc }}</div>
   </div>
 </template>
 
