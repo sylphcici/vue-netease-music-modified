@@ -101,7 +101,7 @@
                   class="simi-item"
                   v-for="simiPlaylist in simiPlaylists"
                 >
-                  <Card
+                  <SongListCard
                     :img="simiPlaylist.coverImgUrl"
                     :name="simiPlaylist.name"
                     @click="onClickPlaylist(simiPlaylist.id)"
@@ -116,7 +116,7 @@
                         <p class="count">{{$utils.formatNumber(simiPlaylist.playCount)}}</p>
                       </div>
                     </template>
-                  </Card>
+                  </SongListCard>
                 </div>
               </div>
               <div
@@ -129,7 +129,7 @@
                   class="simi-item"
                   v-for="simiSong in simiSongs"
                 >
-                  <Card
+                  <SongCard
                     :desc="simiSong.artistsText"
                     :img="simiSong.img"
                     :name="simiSong.name"
@@ -138,7 +138,7 @@
                     <template v-slot:img-mask>
                       <PlayIcon class="play-icon" />
                     </template>
-                  </Card>
+                  </SongCard>
                 </div>
               </div>
             </div>
