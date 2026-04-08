@@ -15,7 +15,7 @@
  */
 export default {
   name: "Card",
-  props: ["img", "name", "desc"],
+  props: ["img", "name", "artist"],
   methods: {
     onClick(e) {
       this.$emit("click", e)
