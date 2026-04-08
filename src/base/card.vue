@@ -1,6 +1,6 @@
 <template>
   <div @click="onClick" class="horizontal-card">
-    <slot name="img-wrap">
+    <slot name="img-mask">
       <div>默认图片区域</div>
     </slot>
   </div>
