@@ -1,8 +1,17 @@
 <template>
   <div @click="onClick" class="horizontal-card">
-    <slot name="img-mask">
-      <div>默认图片区域</div>
+    <slot name="img-wrap">
+      <div class="img-wrap">
+        <img v-lazy="$utils.genImgUrl(img, 50)" />
+        <slot name="img-mask"></slot>
+      </div>
     </slot>
+    <div class="content">
+      <div class="name">{{ name }}</div>
+      <div class="desc">
+        <slot name="desc">{{ desc }}</slot>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -11,7 +20,7 @@
  * 左边是图片 右边上下两行文字的卡片
  */
 export default {
-  name: "Card",
+  name: "SongCard",
   props: ["img", "name", "desc"],
   methods: {
     onClick(e) {
