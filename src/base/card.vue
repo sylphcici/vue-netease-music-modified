@@ -3,7 +3,7 @@
     <div class="content">
       <div class="name">{{ name }}</div>
       <div class="desc">
-        <slot name="desc"><span>{{ desc }}</span></slot>
+        <slot name="desc">{{ artist }}</slot>
       </div>
     </div>
   </div>
