@@ -3,7 +3,7 @@
     <div class="content">
       <div class="name">{{ name }}</div>
       <div class="desc">
-        <slot name="desc">{{ artist }}</slot>
+        <slot name="desc">{{ desc }}</slot>
       </div>
     </div>
   </div>
@@ -15,7 +15,7 @@
  */
 export default {
   name: "Card",
-  props: ["img", "name", "artist"],
+  props: ["img", "name", "desc"],
   methods: {
     onClick(e) {
       this.$emit("click", e)
