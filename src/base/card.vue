@@ -9,7 +9,7 @@
     <div class="content">
       <div class="name">{{ name }}</div>
       <div class="desc">
-        <slot name="desc">{{ desc }}</slot>
+        <slot name="desc">test</slot>
       </div>
     </div>
   </div>
