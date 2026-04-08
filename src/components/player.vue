@@ -130,7 +130,7 @@
                   v-for="simiSong in simiSongs"
                 >
                   <Card
-                    :artist="simiSong.artistsText"
+                    :desc="simiSong.artistsText"
                     :img="simiSong.img"
                     :name="simiSong.name"
                     @click="onClickSong(simiSong)"
