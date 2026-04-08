@@ -135,6 +135,9 @@
                     :name="simiSong.name"
                     @click="onClickSong(simiSong)"
                   >
+                    <template v-slot:desc>
+                      {{ simiSong.artistsText }}
+                    </template>
                     <template v-slot:img-mask>
                       <PlayIcon class="play-icon" />
                     </template>
