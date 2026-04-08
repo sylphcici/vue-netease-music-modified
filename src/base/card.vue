@@ -1,7 +1,8 @@
 <template>
   <div @click="onClick" class="horizontal-card">
-    <slot name="test"></slot>
-    <div>测试文字</div>
+    <slot name="img-wrap">
+      <div>默认图片区域</div>
+    </slot>
   </div>
 </template>
 
