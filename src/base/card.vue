@@ -1,17 +1,6 @@
 <template>
   <div @click="onClick" class="horizontal-card">
-    <slot name="img-wrap">
-      <div class="img-wrap">
-        <img :src="$utils.genImgUrl(img, 50)" />
-        <slot name="img-mask"></slot>
-      </div>
-    </slot>
-    <div class="content">
-      <div class="name">{{ name }}</div>
-      <div class="desc">
-        <slot name="desc">{{ desc }}</slot>
-      </div>
-    </div>
+    <div>测试: {{ name }} - {{ img }}</div>
   </div>
 </template>
 
