@@ -203,6 +203,8 @@ export default {
       ]).finally(() => {
         this.simiLoading = false
       })
+      console.log('simiPlaylists data:', simiPlaylists)
+      console.log('simiSongs data:', simiSongs)
       this.simiPlaylists = simiPlaylists.playlists
       this.simiSongs = simiSongs.songs.map(song => {
         const {
@@ -222,6 +224,8 @@ export default {
           mvId: mvid
         })
       })
+      console.log('this.simiPlaylists:', this.simiPlaylists)
+      console.log('this.simiSongs:', this.simiSongs)
     },
     getPlayerShowCls() {
       return this.isPlayerShow ? "show" : "hide"
