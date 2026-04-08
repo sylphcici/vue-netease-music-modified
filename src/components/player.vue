@@ -106,16 +106,6 @@
                     :name="simiPlaylist.name"
                     @click="onClickPlaylist(simiPlaylist.id)"
                   >
-                    <template v-slot:desc>
-                      <div class="desc">
-                        <Icon
-                          :size="12"
-                          color="shallow"
-                          type="play"
-                        />
-                        <p class="count">{{$utils.formatNumber(simiPlaylist.playCount)}}</p>
-                      </div>
-                    </template>
                   </SongListCard>
                 </div>
               </div>
@@ -135,9 +125,6 @@
                     :name="simiSong.name"
                     @click="onClickSong(simiSong)"
                   >
-                    <template v-slot:img-mask>
-                      <PlayIcon class="play-icon" />
-                    </template>
                   </SongCard>
                 </div>
               </div>
