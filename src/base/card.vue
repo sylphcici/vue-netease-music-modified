@@ -45,15 +45,7 @@ export default {
     }
 
     .play-icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 20px;
-      height: 20px;
-      color: white;
-      opacity: 0.8;
-      transition: opacity 0.2s;
+     @include abs-center;
     }
   }
 
