@@ -16,7 +16,7 @@
  * 左边是图片 右边上下两行文字的卡片
  */
 export default {
-  name: "SongCard",
+  name: "CardSong",
   props: ["img", "name", "desc"],
   methods: {
     onClick(e) {
