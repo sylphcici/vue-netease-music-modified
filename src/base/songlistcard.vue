@@ -64,6 +64,9 @@ export default {
       font-size: $font-size-sm;
       color: var(--font-color-grey-shallow);
       @include text-ellipsis();
+      .count {
+            margin-left: 4px;
+          }
     }
   }
 }
