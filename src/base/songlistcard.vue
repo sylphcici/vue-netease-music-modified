@@ -64,6 +64,8 @@ export default {
       font-size: $font-size-sm;
       color: var(--font-color-grey-shallow);
       @include text-ellipsis();
+      display: flex;
+      align-items: center;
       .count {
             margin-left: 4px;
           }
