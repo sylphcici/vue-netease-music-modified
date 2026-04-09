@@ -104,6 +104,7 @@
                   <SongListCard
                     :img="simiPlaylist.coverImgUrl"
                     :name="simiPlaylist.name"
+                    :count="simiPlaylist.playCount"
                     @click="onClickPlaylist(simiPlaylist.id)"
                   >
                   </SongListCard>
