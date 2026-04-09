@@ -1,9 +1,13 @@
 <template>
   <div @click="onClick" class="horizontal-card">
+    <div class="img-wrap">
+        <img v-lazy="$utils.genImgUrl(img, 50)" />
+    </div>
     <div class="content">
       <div class="name">{{ name }}</div>
       <div class="desc">
         <Icon :size="12" color="shallow" type="play" />
+        <p class="count">{{$utils.formatNumber(count)}}</p>
       </div>
     </div>
   </div>
@@ -15,7 +19,7 @@
  */
 export default {
   name: "SongListCard",
-  props: ["img", "name", "desc"],
+  props: ["img", "name", "desc", "count"],
   methods: {
     onClick(e) {
       this.$emit("click", e)
