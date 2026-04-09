@@ -1,9 +1,5 @@
 <template>
   <div @click="onClick" class="horizontal-card">
-    <div class="img-wrap">
-      <img v-lazy="$utils.genImgUrl(img, 50)" />
-    </div>
-    </slot>
     <div class="content">
       <div class="name">{{ name }}</div>
       <div class="desc">
