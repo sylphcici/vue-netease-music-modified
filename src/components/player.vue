@@ -119,13 +119,13 @@
                   class="simi-item"
                   v-for="simiSong in simiSongs"
                 >
-                  <SongCard
+                  <SongListCard
                     :desc="simiSong.artistsText"
                     :img="simiSong.img"
                     :name="simiSong.name"
                     @click="onClickSong(simiSong)"
                   >
-                  </SongCard>
+                  </SongListCard>
                 </div>
               </div>
             </div>
